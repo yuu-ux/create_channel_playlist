@@ -12,7 +12,7 @@ api_key = os.getenv("API_KEY")
 youtube = googleapiclient.discovery.build("youtube", "v3", developerKey=api_key)
 
 # チャンネルIDを指定
-channel_id = "CHANNEL_ID" # 取得したいチェンネルのIDを取得する
+channel_id = "CHANNEL_ID" # 取得したいチャンネルのIDを取得する
 
 # チャンネルのアップロード動画を取得する
 request = youtube.search().list(
